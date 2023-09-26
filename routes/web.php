@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\ProjectController;
 use App\Http\Controllers\Admin\TypeController;
+use App\Http\Controllers\Admin\TechnologyController;
 
 use Faker\Guesser\Name;
 
@@ -39,6 +40,8 @@ Route::middleware(['auth', 'verified'])
         // Route::resource('posts' , PostController::class);
         Route::resource('projects', ProjectController::class);
         Route::resource('types', TypeController::class);
+        Route::resource('technologies', TechnologyController::class);
+
 
     });
     
